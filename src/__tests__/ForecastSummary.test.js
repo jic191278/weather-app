@@ -33,6 +33,24 @@ describe('ForecastSummary', () => {
       expect(dateParaElement).toBeInTheDocument();
     });
 
-    test('Weather icon is rendered', () => {});
+    test('Weather icon is rendered', () => {
+      const iconImgElement = screen.getByTestId('weather-icon');
+      expect(iconImgElement).toHaveClass('forcast-summary__icon');
+    });
+
+    test('Max temperature is rendered', () => {
+      const maxParaElement = screen.getByText('5°c');
+      expect(maxParaElement).toBeInTheDocument();
+    });
+
+    test('Description is rendered', () => {
+      const descParaElement = screen.getByText('Crazy Weather');
+      expect(descParaElement).toBeInTheDocument();
+    });
+
+    test('More details button is rendered', () => {
+      const button = screen.getByRole('button');
+      expect(button).toBeInTheDocument();
+    });
   });
 });
