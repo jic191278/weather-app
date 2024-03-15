@@ -1,0 +1,16 @@
+.forecast-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-summary * {
+  margin: 0;
+  padding: 0;
+}
+
+.forcast-summary__button {
+  border: none;
+  background-color: lightgray;
+  text-decoration: underline;
+}

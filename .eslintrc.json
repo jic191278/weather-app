@@ -28,11 +28,14 @@
     "react/jsx-props-no-spreading": [0],
     "import/order": [1],
     "no-unused-vars": [1],
-    "prettier/prettier": {
-      "comma-dangle": false,
-      "endOfLine": "auto"
-    },
-    // "prettier/prettier": [1, { "endOfLine": "auto" }],
+    // "prettier/prettier": {
+    //   "comma-dangle": false,
+    //   "endOfLine": "auto"
+    // },
+    "prettier/prettier": [
+      1,
+      { "endOfLine": "auto", "trailingComma": "es5", "singleQuote": true }
+    ],
     "react/jsx-filename-extension": [
       1,
       {

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "../styles/location-details.css";
+import '../styles/location-details.css';
 
 const LocationDetails = ({ location }) => {
   return (

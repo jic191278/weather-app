@@ -15,6 +15,37 @@ exports[`App Render page correctly 1`] = `
         Manchester, UK
       </h2>
     </div>
+    <div
+      class="forecast-summary"
+    >
+      <p
+        class="forcast-summary__date"
+      >
+        Mon Apr 30 2018
+      </p>
+      <img
+        alt="Clear icon"
+        class="forcast-summary__icon"
+        data-testid="weather-icon"
+        src="https://openweathermap.org/img/wn/01d@2x.png"
+      />
+      <p
+        class="forcast-summary__temperature"
+      >
+        11°c
+      </p>
+      <p
+        class="forcast-summary__description"
+      >
+        Clear
+      </p>
+      <button
+        class="forcast-summary__button"
+        type="submit"
+      >
+        More details
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;

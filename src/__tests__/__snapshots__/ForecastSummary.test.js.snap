@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastSummary ForecastSummary Snapshot Component renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summary"
+  >
+    <p
+      class="forcast-summary__date"
+    >
+      Fri Mar 15 2024
+    </p>
+    <img
+      alt="Crazy Weather icon"
+      class="forcast-summary__icon"
+      data-testid="weather-icon"
+      src="https://openweathermap.org/img/wn/11d@2x.png"
+    />
+    <p
+      class="forcast-summary__temperature"
+    >
+      5°c
+    </p>
+    <p
+      class="forcast-summary__description"
+    >
+      Crazy Weather
+    </p>
+    <button
+      class="forcast-summary__button"
+      type="submit"
+    >
+      More details
+    </button>
+  </div>
+</DocumentFragment>
+`;
