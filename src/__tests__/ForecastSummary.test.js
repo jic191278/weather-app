@@ -1,8 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import ForecastSummary from '../components/ForecastSummary';
 
 describe('ForecastSummary', () => {
+  beforeEach(() => {
+    cleanup();
+  });
+
   const forecastProp = {
     date: 1710530097000, // Fri Mar 15 2024
     description: 'Crazy Weather',

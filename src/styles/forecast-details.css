@@ -1,0 +1,38 @@
+.forecast-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forecast-details * {
+  font-family: inherit;
+  text-align: center;
+}
+
+.forecast-details__detail-item {
+  margin: 5px 0;
+}
+
+.forecast-details__detail-items {
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+.forecast-details__detail-item--label {
+  margin-right: 3px;
+}
+
+.forecast-details__detail-item--value {
+  font-weight: normal;
+}
+
+.forecast-details__detail-item--wind-direction {
+  width: 45px;
+}
+
+.forecast-details__detail--wind-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

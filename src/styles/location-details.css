@@ -3,3 +3,7 @@
   text-align: left;
   padding-left: 20px;
 }
+
+.location-details * {
+  font-family: inherit;
+}

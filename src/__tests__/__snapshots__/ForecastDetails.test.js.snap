@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-details"
+  >
+    <ul
+      class="forecast-details__detail-items"
+    >
+      <li>
+        <h3
+          class="forecast-details__date"
+        >
+          Fri Mar 15 2024
+        </h3>
+      </li>
+      <li
+        class="forecast-details__detail-item"
+      >
+        <span
+          class="forecast-details__detail-item--label"
+        >
+          Max Temperature:
+        </span>
+        <span
+          class="forecast-details__detail-item--value"
+        >
+          15°c
+        </span>
+      </li>
+      <li
+        class="forecast-details__detail-item"
+      >
+        <span
+          class="forecast-details__detail-item--label"
+        >
+          Min Temperature:
+        </span>
+        <span
+          class="forecast-details__detail-item--value"
+        >
+          12°c
+        </span>
+      </li>
+      <li
+        class="forecast-details__detail-item"
+      >
+        <span
+          class="forecast-details__detail-item--label"
+        >
+          Humidity:
+        </span>
+        <span
+          class="forecast-details__detail-item--value"
+        >
+          10%
+        </span>
+      </li>
+      <li
+        class="forecast-details__detail-item"
+      >
+        <div
+          class="forecast-details__detail--wind-container"
+        >
+          <span
+            class="forecast-details__detail-item--label"
+          >
+            Wind:
+          </span>
+          <span
+            class="forecast-details__detail-item--value"
+          >
+            25mph
+          </span>
+          <span>
+            <img
+              alt="wind direction icon"
+              class="forecast-details__detail-item--wind-direction"
+              data-testid="wind-direction"
+              src="images/w.png"
+            />
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

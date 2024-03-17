@@ -8,9 +8,10 @@ describe('LocationDetails', () => {
       city: 'Derby',
       country: 'UK',
     };
+
     render(<LocationDetails location={locationProp} />);
 
-    const h2Element = screen.getByText('Derby, UK');
-    expect(h2Element).toBeInTheDocument();
+    const headingElement = screen.getByText('Derby, UK');
+    expect(headingElement).toBeInTheDocument();
   });
 });

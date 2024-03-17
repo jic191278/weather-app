@@ -28,6 +28,7 @@ exports[`ForecastSummary ForecastSummary Snapshot Component renders correctly 1`
     </p>
     <button
       class="forcast-summary__button"
+      name="more-details-btn"
       type="submit"
     >
       More details

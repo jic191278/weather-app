@@ -5,7 +5,9 @@ exports[`App Render page correctly 1`] = `
   <div
     class="app"
   >
-    <h1>
+    <h1
+      class="app-header"
+    >
       Weather App
     </h1>
     <div
@@ -41,10 +43,94 @@ exports[`App Render page correctly 1`] = `
       </p>
       <button
         class="forcast-summary__button"
+        name="more-details-btn"
         type="submit"
       >
         More details
       </button>
+    </div>
+    <div
+      class="forecast-details"
+    >
+      <ul
+        class="forecast-details__detail-items"
+      >
+        <li>
+          <h3
+            class="forecast-details__date"
+          >
+            Mon Apr 30 2018
+          </h3>
+        </li>
+        <li
+          class="forecast-details__detail-item"
+        >
+          <span
+            class="forecast-details__detail-item--label"
+          >
+            Max Temperature:
+          </span>
+          <span
+            class="forecast-details__detail-item--value"
+          >
+            11°c
+          </span>
+        </li>
+        <li
+          class="forecast-details__detail-item"
+        >
+          <span
+            class="forecast-details__detail-item--label"
+          >
+            Min Temperature:
+          </span>
+          <span
+            class="forecast-details__detail-item--value"
+          >
+            4°c
+          </span>
+        </li>
+        <li
+          class="forecast-details__detail-item"
+        >
+          <span
+            class="forecast-details__detail-item--label"
+          >
+            Humidity:
+          </span>
+          <span
+            class="forecast-details__detail-item--value"
+          >
+            30%
+          </span>
+        </li>
+        <li
+          class="forecast-details__detail-item"
+        >
+          <div
+            class="forecast-details__detail--wind-container"
+          >
+            <span
+              class="forecast-details__detail-item--label"
+            >
+              Wind:
+            </span>
+            <span
+              class="forecast-details__detail-item--value"
+            >
+              13mph
+            </span>
+            <span>
+              <img
+                alt="wind direction icon"
+                class="forecast-details__detail-item--wind-direction"
+                data-testid="wind-direction"
+                src="images/s.png"
+              />
+            </span>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </DocumentFragment>

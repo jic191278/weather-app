@@ -68,7 +68,7 @@
       },
       "wind": {
         "speed": 8,
-        "direction": "nne"
+        "direction": "ne"
       },
       "humidity": 50,
       "description": "Hazy",
