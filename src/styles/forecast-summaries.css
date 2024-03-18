@@ -1,0 +1,7 @@
+.forecast-summaries {
+  display: flex;
+}
+
+.forecast-summaries__forecast {
+  margin: 15px;
+}

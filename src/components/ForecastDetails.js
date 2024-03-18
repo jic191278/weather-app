@@ -1,10 +1,9 @@
 import React from 'react';
 
 import '../styles/forecast-details.css';
-// import east from '../images/E.png';
 
 const ForecastDetails = ({ forecast }) => {
-  const { date, humidity, temperature, wind } = forecast;
+  const { date, humidity, temperature, wind } = forecast[0];
   const { max, min } = temperature;
   const { direction, speed } = wind;
 
@@ -57,9 +56,3 @@ const ForecastDetails = ({ forecast }) => {
 };
 
 export default ForecastDetails;
-
-// Needs
-// - date
-// - temp - max & min
-// - humidity
-// - wind speed & direction
