@@ -17,3 +17,7 @@
   background-color: #d6d8d8;
   text-decoration: underline;
 }
+.forcast-summary__button:hover {
+  cursor: pointer;
+  color: blue;
+}

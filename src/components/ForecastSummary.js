@@ -7,7 +7,14 @@ const ForecastSummary = ({ forecast, handleForecastSelection }) => {
   const { date, description, icon, temperature } = forecast;
   const { max } = temperature;
 
-  const iconCode = `${icon.slice(0, 1)}00`;
+  // console.log(icon.toString());
+  // console.log(typeof icon);
+  // const iconCode = `${icon.slice(0, 1)}00`;
+  // const formattedIconCode = icon.toString().slice(0, 1);
+  // const iconCode = `${formattedIconCode}00`;
+
+  const iconCode = `${icon.toString().slice(0, 1)}00`;
+
   const displayIcon = iconData[iconCode];
 
   const formattedDate = new Date(date).toDateString();
@@ -25,7 +32,9 @@ const ForecastSummary = ({ forecast, handleForecastSelection }) => {
       <p className="forcast-summary__description">{description}</p>
       <button
         className="forcast-summary__button"
-        onClick={handleForecastSelection(date)}
+        onClick={() => {
+          handleForecastSelection(date);
+        }}
         type="submit"
       >
         More details

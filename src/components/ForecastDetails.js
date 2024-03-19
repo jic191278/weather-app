@@ -3,9 +3,15 @@ import React from 'react';
 import '../styles/forecast-details.css';
 
 const ForecastDetails = ({ forecast }) => {
-  const { date, humidity, temperature, wind } = forecast[0];
+  const { date, humidity, temperature, wind } = forecast;
   const { max, min } = temperature;
   const { direction, speed } = wind;
+
+  // handle lack of wind direction images
+  let windDirection = direction;
+  if (direction.length > 2) {
+    windDirection = direction.slice(0, 1);
+  }
 
   const formattedDate = new Date(date).toDateString();
 
@@ -44,7 +50,7 @@ const ForecastDetails = ({ forecast }) => {
               <img
                 className="forecast-details__detail-item--wind-direction"
                 data-testid="wind-direction"
-                src={`images/${direction}.png`}
+                src={`images/${windDirection}.png`}
                 alt="wind direction icon"
               />
             </span>
