@@ -1,0 +1,9 @@
+.search-form {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.search-form * {
+  font-family: inherit;
+}

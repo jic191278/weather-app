@@ -1,34 +1,19 @@
 import { React, useEffect, useState } from 'react';
-import axios from 'axios';
 
 import '../styles/app.css';
 
 import LocationDetails from './LocationDetails';
+import SearchForm from './SearchForm';
 import ForecastSummaries from './ForecastSummaries';
 import ForecastDetails from './ForecastDetails';
 
-// const App = ({ location, forecasts }) => {
+import getData from '../requests/getData';
+
 const App = () => {
   const [location, setLocation] = useState({ city: '', country: '' });
   const [forecasts, setForecasts] = useState([]);
   const [selectedDate, setSelectedDate] = useState(0);
-
-  const getData = () => {
-    return axios
-      .get('https://cmd-shift-weather-app-alt.onrender.com/forecast')
-      .then((response) => {
-        setSelectedDate(response.data.forecasts[0].date);
-        setLocation(response.data.location);
-        setForecasts(response.data.forecasts);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
@@ -38,10 +23,19 @@ const App = () => {
     setSelectedDate(date);
   };
 
+  const handleCitySearch = (city) => {
+    getData(setSelectedDate, setLocation, setForecasts, city, setErrorMessage);
+  };
+
+  useEffect(() => {
+    getData(setSelectedDate, setLocation, setForecasts, 'Hove');
+  }, []);
+
   return (
     <div className="app">
       <h1 className="app-header">Weather App</h1>
-      <LocationDetails location={location} />
+      <LocationDetails location={location} errorMessage={errorMessage} />
+      <SearchForm handleCitySearch={handleCitySearch} />
       <ForecastSummaries
         forecasts={forecasts}
         handleForecastSelection={handleForecastSelection}
